@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Astrovera</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-   body {
-	  margin: 0;
-	  padding: 0;
-	  min-height: 100vh;
+    body {
+      margin: 0;
+      padding: 0;
 
-	  background: url("astrovera-bg.png") no-repeat center center / cover;
-	  background-attachment: fixed;
+      background-color: #3e1a54;
+      background-image: url("astrovera-bg.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: auto 100vh;
+      background-attachment: fixed;
 
-	  font-family: sans-serif;
-	  color: white;
-	  text-align: center;
-
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: center;
-	  align-items: center;
-	}
-    .overlay {
-      background: rgba(0, 0, 0, 0.5);
-      padding: 2rem;
-    }
-    h1, p {
-      margin: 0.5em 0;
-    }
-    input {
-      margin: 0.5em 0;
-      padding: 0.6em;
-      width: 80%;
-      max-width: 300px;
-      border: none;
-      border-radius: 5px;
-    }
-    button {
-      padding: 0.6em 1.2em;
-      border: none;
-      background: #9c27b0;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
       color: white;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+    }
+	
+	.content-container {
+	  width: 90%;
+	  max-width: 512px; /* adjust based on how wide your image is */
+	  margin: 0 auto;
+	  padding: 0 1em; /* small horizontal padding on mobile */
+	}
+
+	
+    .headline {
+      font-size: 2.3em;
+      max-width: 90%;
+      padding: 0.5em 1em;
+    }
+
+	.overlay {
+      font-size: 1.3em;
+      max-width: 90%;
+      padding: 0.1em 1em;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
     }
   </style>
-  
 </head>
+
 <body>
-  <div class="overlay">
-    <h1>Discover the answers hidden in the stars</h1>
-    <p>Sign up for personalized horary guidance</p>
-	<form action="https://script.google.com/a/macros/astrovera.app/s/AKfycbzkAtfVJALWCqYRX6au8z9DFJR3IuNTKMkuxRaxRfxapblnfLqrg0HqmDb0DmchbNGMhw/exec" method="POST">
-	  <input type="text" name="name" placeholder="Your Name" required>
-	  <input type="email" name="email" placeholder="Your Email" required>
-	  <button type="submit">Sign Up</button>
-	</form>
+  <div class="content-container">
+    <div class="headline">
+      Discover the answers hidden in the stars
+    </div>
+	<div class="overlay">
+		<p>Let personalized horary insights pave the way for your life's journey. Step into the cosmos with us. Sign up now for timely readings and custom celestial guidance crafted just for your moment.</p>
+		<form action="https://script.google.com/a/macros/astrovera.app/s/AKfycbzkAtfVJALWCqYRX6au8z9DFJR3IuNTKMkuxRaxRfxapblnfLqrg0HqmDb0DmchbNGMhw/exec" method="POST">
+		  <input type="text" name="name" placeholder="Your Name" required>
+		  <input type="email" name="email" placeholder="Your Email" required>
+		  <button type="submit">Sign Up</button>
+		</form>
+		<p> </p>
+	</div>
   </div>
 </body>
+
 </html>
